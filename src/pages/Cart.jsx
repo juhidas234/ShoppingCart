@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import CartContext from '../store/cartContext';
+import CartContext from '../store/CartContext';
 import CartItem from '../components/cartItem/CartItem';
 import { Button, Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';

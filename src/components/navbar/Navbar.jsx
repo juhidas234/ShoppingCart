@@ -10,8 +10,10 @@ import LocalMallIcon from '@mui/icons-material/LocalMall';
 import CartContext from '../../store/cartContext';
 import { useContext } from 'react';
 import Badge from '@mui/material/Badge';
+import ThemeBtn from '../ThemeBtn/ThemeBtn'; // Import ThemeBtn component
+import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({ colorMode }) => {  // Accept colorMode prop
     const { cartLength = 0 } = useContext(CartContext); // Default to 0 if cartLength is undefined
 
     return (
@@ -37,6 +39,7 @@ const Navbar = () => {
                             <LocalMallIcon />
                         </Badge>
                     </Button>
+                     <ThemeBtn colorMode={colorMode} />
                 </Toolbar>
             </AppBar>
         </Box>

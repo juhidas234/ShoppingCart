@@ -1,4 +1,3 @@
-import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import AllProducts from './pages/AllProducts';
@@ -6,19 +5,21 @@ import Cart from './pages/Cart';
 import Register from './pages/Register';
 import Layout from './components/Layout/Layout';
 import ShowProduct from './pages/ShowProduct';
+import './App.css';
 
 function App() {
-
-    return (
-        <Layout>
-            <Routes>
-                <Route path='/' element={<AllProducts />} />
-                <Route path='/login' element={<Login />} />
-                <Route path='/cart' element={<Cart />} />
-                <Route path='/register' element={<Register />} />
-                <Route path='/products/:productId' element={<ShowProduct />} />
-            </Routes>
-        </Layout>
-    )
+  return (
+    <Layout>
+      <Routes>
+        <Route path='/' element={<AllProducts />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/products/:productId' element={<ShowProduct />} />
+      </Routes>
+    </Layout>
+  );
 }
-export default App
+
+
+export default App;
