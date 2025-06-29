@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Rating from '@mui/material/Rating';
 import { Box } from '@mui/material';
-import CartContext from '../store/cartContext.jsx';
+import CartContext from '../store/CartContext.jsx';
 
 const ShowProduct = () => {
     const { productId } = useParams();
