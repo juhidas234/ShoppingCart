@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
-import CartContext from '../../store/cartContext';
+import CartContext from '../../store/CartContext';
 import { useContext } from 'react';
 import Badge from '@mui/material/Badge';
 import ThemeBtn from '../ThemeBtn/ThemeBtn'; // Import ThemeBtn component
